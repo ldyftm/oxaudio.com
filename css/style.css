@@ -59,7 +59,7 @@ body {
 
 .logo-title {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -982,4 +982,5 @@ form button:hover {
     .col-2 form {
         max-width: 100%;
     }
+
 }
