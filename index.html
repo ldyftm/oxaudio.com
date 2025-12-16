@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OxAudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- RESPONSIVE NAVBAR -->
+    <header class="navbar-header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="C:\OxAudio\photos\Logo.png" alt="OxAudio Logo">
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <!--HOMEPAGE-->
+    <section id="home" class="hero">
+        <h1 class="logo-title">OxAudio</h1>
+        <img src="C:\OxAudio\photos\hero-earbuds.png" class="hero-product" alt="Hero Earbuds">
+        <div class="homepage-content">
+            <div class="left-text">
+                <h3>Hear difference, <br>Feel the difference</h3>
+            </div>
+            
+            <div class="right-text">
+                <h3>Master the Art of Audio</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT US-->
+    <section id="about" class="about">
+        <div class="about-card">
+        <h2 class="purple-title">About OxAudio</h2>
+        <p class="subtitle">What if extraordinary sound wasn't a luxury?</p>
+        <p class="about-text">
+            OxAudio was founded on a simple principle: that powerful, 
+            pure sound should be within everyone's reach. We are a 
+            community of listeners and creators, united by a refusal to 
+            settle and dedicated to crafting audio experiences that move 
+            you.
+        </p>
+        
+
+        <p class="about-text">
+            Our brand embodies the strength, clarity, and reliability of 
+            the ox. We engineer solid, dependable audio gear designed 
+            to bring music to life—with deep, feeling bass and crisp, 
+            clear tones. For the gym, the studio, or life in between, 
+            OxAudio delivers fearless sound that stays true.
+        </p>
+
+        <button class="team-btn" onclick="window.location.href='OurTeam.html'">Meet The Team</button>
+        <img src="C:\OxAudio\photos\white-headphones-removebg.png" class="about-img">
+        </div>
+    </section>
+
+    <!--COLLECTION-->
+    <section id="collections" class="collections">
+        <div class="collection-card">
+            <h3 class="slideshow-title">OxEarbuds</h3>
+
+            <input type="radio" name="slideshow1" id="slide1-1" checked>
+            <input type="radio" name="slideshow1" id="slide1-2">
+            <input type="radio" name="slideshow1" id="slide1-3">
+            <input type="radio" name="slideshow1" id="slide1-4">
+            <input type="radio" name="slideshow1" id="slide1-5">
+
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="numbertext">1/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Black Earbuds.jpg" alt="OxAudio Noir">
+                        <div class="text">OxAudio Noir</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">2/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio White Earbuds.jpg" alt="OxAudio Lumen">
+                        <div class="text">OxAudio Lumen</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">3/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Purple Earbuds.jpg" alt="OxAudio Luxe">
+                        <div class="text">OxAudio Luxe</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">4/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Blue Earbuds.jpg" alt="OxAudio Wave">
+                        <div class="text">OxAudio Wave</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">5/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Pink Earbuds.jpg" alt="OxAudio Bloom">
+                        <div class="text">OxAudio Bloom</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow-dots">
+                <label for="slide1-1" class="dot-label"></label>
+                <label for="slide1-2" class="dot-label"></label>
+                <label for="slide1-3" class="dot-label"></label>
+                <label for="slide1-4" class="dot-label"></label>
+                    <label for="slide1-5" class="dot-label"></label>
+            </div>
+        
+            <div class="navigation-buttons">
+                <label for="slide1-5" class="nav-btn prev">Previous</label>
+                <label for="slide1-1" class="nav-btn prev">Previous</label>
+                <label for="slide1-2" class="nav-btn prev">Previous</label>
+                <label for="slide1-3" class="nav-btn prev">Previous</label>
+                <label for="slide1-4" class="nav-btn prev">Previous</label>
+                
+                <label for="slide1-2" class="nav-btn next">Next</label>
+                <label for="slide1-3" class="nav-btn next">Next</label>
+                <label for="slide1-4" class="nav-btn next">Next</label>
+                <label for="slide1-5" class="nav-btn next">Next</label>
+                <label for="slide1-1" class="nav-btn next">Next</label>
+            </div>
+        </div>
+
+            <div class="collection-card">
+            <h3 class="slideshow-title">OxSpeaker</h3>
+
+            <input type="radio" name="slideshow2" id="slide2-1" checked>
+            <input type="radio" name="slideshow2" id="slide2-2">
+            <input type="radio" name="slideshow2" id="slide2-3">
+            <input type="radio" name="slideshow2" id="slide2-4">
+            <input type="radio" name="slideshow2" id="slide2-5">
+
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="numbertext">1/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Black Speaker.jpg" alt="OxAudio Midnight">
+                        <div class="text">OxAudio Midnight</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">2/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio White Speaker.jpg" alt="OxAudio Alabaster">
+                        <div class="text">OxAudio Alabaster</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">3/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Purple Speaker.jpg" alt="OxAudio Amethyst">
+                        <div class="text">OxAudio Amethyst</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">4/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Blue Speaker.jpg" alt="OxAudio Deepsea">
+                        <div class="text">OxAudio Deepsea</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">5/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Pink Speaker.jpg" alt="OxAudio Blush">
+                        <div class="text">OxAudio Blush</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow-dots">
+                <label for="slide2-1" class="dot-label"></label>
+                <label for="slide2-2" class="dot-label"></label>
+                <label for="slide2-3" class="dot-label"></label>
+                <label for="slide2-4" class="dot-label"></label>
+                <label for="slide2-5" class="dot-label"></label>
+            </div>
+        
+            <div class="navigation-buttons">
+                <label for="slide2-5" class="nav-btn prev">Previous</label>
+                <label for="slide2-1" class="nav-btn prev">Previous</label>
+                <label for="slide2-2" class="nav-btn prev">Previous</label>
+                <label for="slide2-3" class="nav-btn prev">Previous</label>
+                <label for="slide2-4" class="nav-btn prev">Previous</label>
+                
+                <label for="slide2-2" class="nav-btn next">Next</label>
+                <label for="slide2-3" class="nav-btn next">Next</label>
+                <label for="slide2-4" class="nav-btn next">Next</label>
+                <label for="slide2-5" class="nav-btn next">Next</label>
+                <label for="slide2-1" class="nav-btn next">Next</label>
+            </div>
+        </div>
+
+            <div class="collection-card">
+            <h3 class="slideshow-title">OxHeadphones</h3>
+
+            <input type="radio" name="slideshow3" id="slide3-1" checked>
+            <input type="radio" name="slideshow3" id="slide3-2">
+            <input type="radio" name="slideshow3" id="slide3-3">
+            <input type="radio" name="slideshow3" id="slide3-4">
+            <input type="radio" name="slideshow3" id="slide3-5">
+
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="numbertext">1/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Black Headphones.jpg" alt="OxAudio Obsidian Pro">
+                        <div class="text">OxAudio Obsidian Pro</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">2/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio White Headphones.jpg" alt="OxAudio Glacier Pro">
+                        <div class="text">OxAudio Glacier Pro</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">3/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Purple Headphones.jpg" alt="OxAudio Monarch Pro">
+                        <div class="text">OxAudio Monarch Pro</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">4/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Blue Headphones.jpg" alt="OxAudio Zenith Pro">
+                        <div class="text">OxAudio Zenith Pro</div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="numbertext">5/5</div>
+                        <img src="C:\OxAudio\photos\OxAudio Pink Headphones.jpg" alt="OxAudio Dawn Pro">
+                        <div class="text">OxAudio Dawn Pro</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow-dots">
+                <label for="slide3-1" class="dot-label"></label>
+                <label for="slide3-2" class="dot-label"></label>
+                <label for="slide3-3" class="dot-label"></label>
+                <label for="slide3-4" class="dot-label"></label>
+                <label for="slide3-5" class="dot-label"></label>
+            </div>
+        
+            <div class="navigation-buttons">
+                <label for="slide3-5" class="nav-btn prev">Previous</label>
+                <label for="slide3-1" class="nav-btn prev">Previous</label>
+                <label for="slide3-2" class="nav-btn prev">Previous</label>
+                <label for="slide3-3" class="nav-btn prev">Previous</label>
+                <label for="slide3-4" class="nav-btn prev">Previous</label>
+
+                <label for="slide3-2" class="nav-btn next">Next</label>
+                <label for="slide3-3" class="nav-btn next">Next</label>
+                <label for="slide3-4" class="nav-btn next">Next</label>
+                <label for="slide3-5" class="nav-btn next">Next</label>
+                <label for="slide3-1" class="nav-btn next">Next</label>
+            </div>
+        </div>
+    </section>
+
+    <!--SERVICES-->
+    <section id="services" class="services-container">
+        <div class="service-card big-card">
+            <h2>Our Services</h2>
+            <p class="p-big-card">
+                At OxAudio, we engineer more than exceptional 
+                audio gear—we build a complete ecosystem for 
+                fearless listening. Our services are designed 
+                to extend the strength, clarity, and 
+                reliability of our products into every part 
+                of your experience. From the moment you find 
+                your perfect sonic match to years of 
+                supported performance, we ensure your sound 
+                journey is seamless, sustainable, and deeply 
+                personal.
+            </p>
+        </div>   
+
+    <div class="small-cards">
+        <div class="service-card">
+            <h2>Fearlessly Protected</h2>
+            <p>
+                Every product comes with a 3-Year 
+                Fearless Warranty, with optional 
+                OxAudio Shield for worry-free, 
+                accidental coverage.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h2>Protect your sound</h2>
+            <p>
+                Get your custom gear match via our 
+                Sound Profile Quiz and master it with 
+                pro tuning guides and support at 
+                OxAudio Labs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h2>Join the inner circle</h2>
+            <p>
+                Access early releases, exclusive 
+                content, and curated events as a 
+                member of The OxSound Club 
+                community.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h2>Engineered for Longevity</h2>
+            <p>
+                Extend your gear's life with our Repair 
+                & Revive Program or upgrade 
+                responsibly through the Re-Ox 
+                Trade-In Program.</p>
+        </div>
+    </div>
+    </section>
+    
+    <!-- CONTACT US -->
+    <section id="contact" >
+    <div class="contact-container">
+
+        <div class="contact-card info-card">
+        <h3>Send a message:</h3>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div>
+            <strong>Email</strong>
+            <p>support@oxaudio.com</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-phone contact-icon"></i>  
+            <div>
+            <strong>Phone</strong>
+            <p>123-456-7890</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="contact-card form-card">
+        <h2>CONTACT US</h2>
+        <p class="subtitle">
+            Have questions, need support, or want to partner with OxAudio?
+            We'd love to hear from you!
+        </p>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address or Phone Number">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="reset">Send Message</button>
+        </form>
+        </div>
+
+    </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="gadget-footer">
+        <div class="footer-content">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://x.com/oxaudio?s=21" target="_blank">X (Twitter)</a></li>
+                <li><a href="https://www.instagram.com/oxaudio.ph?igsh=MThqdTZuOHIpOGNjNg%3D%3D&utm_source=qr" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="reset">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>900 San Marcelino St., Ermita, Manila</p>
+        </div>
+
+        <div class="social-links">
+            <p>&copy; 2025 OxAudio. All rights reserved.</p>
+            <div class="payment-methods">
+                <span>Visa | MasterCard | Gcash | Paypal | Apple Pay</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

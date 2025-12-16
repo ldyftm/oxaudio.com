@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    padding: 20px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.wrapper .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h4{
+    display: inline-block;
+    color: white;
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.title h4:hover {
+    color: #ffffff;
+    text-shadow: 
+        0 0 10px #7a1cff,
+        0 0 20px #7a1cff,
+        0 0 30px #7a1cff,
+        0 0 40px #7a1cff;
+    transform: scale(1.05) translateY(-5px);
+    letter-spacing: 3px;
+}
+
+.title h4:hover::before {
+    background: rgba(122, 28, 255, 0.1);
+    box-shadow: 
+        0 0 20px rgba(122, 28, 255, 0.5),
+        0 0 40px rgba(122, 28, 255, 0.3),
+        0 0 60px rgba(122, 28, 255, 0.2),
+        inset 0 0 20px rgba(122, 28, 255, 0.1);
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 
+            0 0 10px #7a1cff,
+            0 0 20px #7a1cff,
+            0 0 30px #7a1cff;
+    }
+    50% {
+        text-shadow: 
+            0 0 15px #a889ff,
+            0 0 30px #a889ff,
+            0 0 45px #a889ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 10px #7a1cff,
+            0 0 20px #7a1cff,
+            0 0 30px #7a1cff;
+    }
+}
+
+.title h4:hover {
+    animation: pulseGlow 2s infinite;
+}
+
+.wrapper .card_Container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card_Container .card{
+    position: relative;
+    width: 260px;
+    height: 360px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_Container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 40px 40px -20px rgba(122, 28, 255, 0.5),
+                inset 0 0 0 1000px rgba(67, 52, 109, .7);
+}
+
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .imbBx img {
+    transform: scale(1.05);
+}
+
+.card .content{
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin: 18px 0 12px;
+    line-height: 1.1em;
+    transition: 0.5s, color 0.3s ease;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+    color: #a889ff;
+}
+
+.content .contentBx h3 span{
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: initial;
+    display: block;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.card:hover .content .contentBx h3 span {
+    color: #fff;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 8px;
+    display: flex;
+    padding: 0;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 8px;
+    transform: translateY(40px);
+    transition: 0.5s, transform 0.3s ease;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.content .sci li a:hover{
+    color: #a889ff;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(168, 137, 255, 0.5);
+}
+
+@media (min-width: 1600px) {
+    .card_Container .card {
+        width: 260px;
+        height: 380px;
+    }
+    
+    .card .content {
+        bottom: -150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .card_Container .card {
+        width: 220px;
+        height: 340px;
+    }
+    
+    .card .content {
+        bottom: -130px;
+        height: 130px;
+    }
+    
+    .content .contentBx h3 {
+        font-size: 15px;
+        margin: 15px 0 10px;
+    }
+    
+    .title h4 {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .card_Container {
+        gap: 25px;
+    }
+    
+    .card_Container .card {
+        width: 280px;
+        height: 400px;
+    }
+    
+    .card .content {
+        bottom: -160px;
+        height: 160px;
+    }
+    
+    .content .contentBx h3 {
+        font-size: 18px;
+        margin: 20px 0 15px;
+    }
+    
+    .title h4 {
+        font-size: 65px;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .card_Container .card {
+        width: 300px;
+        height: 420px;
+    }
+    
+    .title h4 {
+        font-size: 55px;
+        padding: 18px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_Container {
+        justify-content: center;
+    }
+    
+    .card_Container .card {
+        width: 280px;
+        height: 400px;
+    }
+    
+    .title h4 {
+        font-size: 45px;
+        padding: 15px 20px;
+    }
+    
+    body {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h4 {
+        font-size: 38px;
+        padding: 12px 15px;
+    }
+    
+    .card_Container .card {
+        width: 260px;
+        height: 380px;
+    }
+    
+    .card .content {
+        bottom: -150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 380px) {
+    .title h4 {
+        font-size: 32px;
+        padding: 10px 12px;
+    }
+}
