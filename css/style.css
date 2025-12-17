@@ -69,6 +69,8 @@ z-index: 3;
 text-transform: uppercase;
 margin: 0;
 }
+
+
 .hero {
 width: 100vw;
 height: 100vh;
@@ -115,6 +117,12 @@ width: 45%;
 text-align: left;
 }
 
+.right-text {
+width: 45%;
+text-align: right;
+}
+
+
 @keyframes bob {
     0%   { transform: translate(-50%, -50%) translateY(0); }
     50%  { transform: translate(-50%, -50%) translateY(-25px); }
@@ -125,7 +133,6 @@ text-align: left;
     height: 100%;
     padding: 160px 10% 120px;
     position: relative;
-    
 }
 
 .about-card {
@@ -138,7 +145,6 @@ text-align: left;
     border: 1px solid rgba(183, 165, 255, 0.1);
     overflow: visible;
     z-index: 2;
-
 }
 
 .about-card:hover {
@@ -978,6 +984,7 @@ form button:hover {
     }
 
 }
+
 
 
 
