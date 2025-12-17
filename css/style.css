@@ -166,7 +166,7 @@ body {
 }
 
 .about {
-    min-height: 100%;
+    height: 100%;
     padding: 160px 10% 120px;
     position: relative;
     
@@ -1022,5 +1022,6 @@ form button:hover {
     }
 
 }
+
 
 
