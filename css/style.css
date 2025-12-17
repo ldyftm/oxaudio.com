@@ -93,6 +93,27 @@ pointer-events: none;
 z-index: 5;
 }
 
+}
+
+@media (max-width: 1024px) {
+  .hero-product {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-product {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-product {
+    width: 95%;
+  }
+}
+
+
 .homepage-content {
 position: absolute;
 top: 0;
@@ -984,6 +1005,7 @@ form button:hover {
     }
 
 }
+
 
 
 
