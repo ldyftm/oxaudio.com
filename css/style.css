@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* ===== GLOBAL ANIMATED BACKGROUND ===== */
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
@@ -63,7 +62,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 150px;
+    font-size: clamp(48px, 12vw, 150px);
     font-weight: 700;
     letter-spacing: 2px;
     z-index: 3; 
@@ -81,15 +80,17 @@ body {
 }
 
 .hero-product {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;  
-    max-width: 800px;
-    animation: bob 3s ease-in-out infinite;
-    pointer-events: none;
-    z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: clamp(240px, 55vw, 800px);
+  max-width: 90vw;
+
+  animation: bob 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 5;
 }
 
 .homepage-content {
@@ -106,20 +107,57 @@ body {
 }
 
 .homepage-content h1 {
-    font-size: 50px;
-    color: white;
-    margin: 0;
+  font-size: clamp(28px, 4vw, 50px);
+  color: white;
+  margin: 0;
 }
 
 .left-text {
-    width: 45%;
-    text-align: left;
+  width: 45%;
 }
 
 .right-text {
     width: 45%;
     text-align: right;
 }
+
+@media (max-width: 1024px) {
+  .left-text {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  .left-text {
+    width: 100%;
+  }
+
+  .logo-title {
+    top: 3%;
+  }
+
+  .hero-product {
+    top: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-title {
+    letter-spacing: 1px;
+  }
+
+  .hero-product {
+    width: 80vw;
+  }
+}
+
 
 @keyframes bob {
     0%   { transform: translate(-50%, -50%) translateY(0); }
@@ -984,4 +1022,5 @@ form button:hover {
     }
 
 }
+
 
