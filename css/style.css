@@ -86,33 +86,13 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 60%;  
-max-width: 800px;
+width: 35vw;  
+max-width: 410px;
+min-width: 220px;
 animation: bob 3s ease-in-out infinite;
 pointer-events: none;
 z-index: 5;
 }
-
-}
-
-@media (max-width: 1024px) {
-  .hero-product {
-    width: 65%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-product {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-product {
-    width: 95%;
-  }
-}
-
 
 .homepage-content {
 position: absolute;
@@ -143,6 +123,11 @@ width: 45%;
 text-align: right;
 }
 
+@media (max-width: 768px) {
+.hero-product {
+width: 70vw;
+ }
+}
 
 @keyframes bob {
     0%   { transform: translate(-50%, -50%) translateY(0); }
@@ -1005,6 +990,7 @@ form button:hover {
     }
 
 }
+
 
 
 
